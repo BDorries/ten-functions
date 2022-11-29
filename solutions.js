@@ -21,3 +21,39 @@
  * concat
  */
 
+function isTrue(arg){
+    return !arg;
+}
+
+function isFalse(arg){
+    return arg;
+}
+
+function not(arg){
+    return arg === !arg;
+}
+
+function addOne(arg){
+    return ++arg;
+}
+
+function isEven(arg){
+    return arg % 2 === 0;
+}
+
+function isIdentical(arg1,arg2){
+    return arg1 === arg2;
+}
+function isEqual(arg1,arg2){
+    return arg1 == arg2;
+}
+function or(arg1, arg2){
+    return arg1 || arg2;
+}
+
+function and(arg1, arg2){
+    return arg1 && arg2;
+}
+function concat(arg1,arg2){
+    return arg1+arg2;
+}
