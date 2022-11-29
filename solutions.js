@@ -22,15 +22,15 @@
  */
 
 function isTrue(arg){
-    return !arg;
+    return arg === true;
 }
 
 function isFalse(arg){
-    return arg;
+    return arg === false;
 }
 
 function not(arg){
-    return arg === !arg;
+    return !arg;
 }
 
 function addOne(arg){
@@ -38,7 +38,7 @@ function addOne(arg){
 }
 
 function isEven(arg){
-    return arg % 2 === 0;
+    return parseInt(arg) % 2 == 0;
 }
 
 function isIdentical(arg1,arg2){
@@ -55,5 +55,5 @@ function and(arg1, arg2){
     return arg1 && arg2;
 }
 function concat(arg1,arg2){
-    return arg1+arg2;
+    return arg1.toString()+arg2.toString();
 }
